@@ -1,23 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.scss";
+import React, { useState } from "react";
 
 function App() {
+  const [hide, setHide] = useState(false);
+
+  const toggleClass = () => {
+    setHide(!hide);
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="home">
+      <div onClick={toggleClass} className={hide ? "home__none" : null}>
+        <h1 className="home__h1">Welcome! I am Felipe Villa</h1>
+      </div>
+      <div
+        onClick={toggleClass}
+        className={hide ? "home__showbox" : "home__box"}
+      >
+        <h1>box</h1>
+      </div>
     </div>
   );
 }
