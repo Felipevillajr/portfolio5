@@ -12,6 +12,7 @@ function App() {
     <div className="home">
       <div onClick={toggleClass} className={hide ? "home__none" : null}>
         <h1 className="home__h1">Welcome! I am Felipe Villa</h1>
+        <p className="home__p">Click Me!</p>
       </div>
       <div
         onClick={toggleClass}

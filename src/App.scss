@@ -26,6 +26,18 @@
   &__h1 {
     @include fadein;
   }
+  &__h1:hover {
+    color: #1b4332;
+    outline-color: #d8f3dc;
+  }
+  &__p {
+    text-align: center;
+    @include fadein;
+  }
+  &__p:hover {
+    font-weight: bold;
+    text-decoration: underline;
+  }
   &__box {
     display: none;
   }
