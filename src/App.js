@@ -19,7 +19,7 @@ function App() {
         className={hide ? "home__showbox" : "home__box"}
       >
         <h1>Examples of my work</h1>
-        <div>
+        <div className="examples">
           <a href="https://scratch.mit.edu/projects/626326222">
             Scratch Based Game
           </a>
