@@ -27,8 +27,9 @@
     @include fadein;
   }
   &__h1:hover {
-    color: #1b4332;
-    outline-color: #d8f3dc;
+    color: #ffec99d5;
+    text-shadow: 10px 10px 10px 10px rgb(0, 0, 0);
+    cursor: pointer;
   }
   &__p {
     text-align: center;
@@ -37,18 +38,15 @@
   &__p:hover {
     font-weight: bold;
     text-decoration: underline;
+    cursor: pointer;
   }
   &__box {
     display: none;
   }
   &__showbox {
-    width: 600px;
-    height: 300px;
+    width: 700px;
+    height: 500px;
     background-color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
   }
 }
 
@@ -61,4 +59,31 @@
 
 a {
   text-decoration: none;
+  color: #ffec99;
+  // font-weight: bold;
+  text-shadow: 10px 10px 10px 10px rgb(0, 0, 0);
+}
+
+a:hover {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.home__showbox__text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: #8efead;
+  cursor: default;
+}
+
+header {
+  color: #8efead;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
