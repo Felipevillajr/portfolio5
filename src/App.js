@@ -3,9 +3,18 @@ import React, { useState } from "react";
 
 function App() {
   const [hide, setHide] = useState(false);
+  const [home, setHome] = useState(false);
 
   const toggleClass = () => {
-    setHide(!hide);
+    if (hide == false) {
+      setHide(!hide);
+    } else {
+      setHide(hide);
+    }
+  };
+
+  const showAbout = () => {
+    setHome(!home);
   };
 
   return (
@@ -19,22 +28,42 @@ function App() {
         className={hide ? "home__showbox" : "home__box"}
       >
         <header>
-          <h1>About</h1>
-          <h1 onclick={() => window.location.reload(false)}>Home</h1>
+          <h1 className="home__link">About</h1>
+          <h1
+            className="home__link"
+            onClick={() => window.location.reload(false)}
+          >
+            Home
+          </h1>
         </header>
         <div className="home__showbox__text">
-          <h1>Portfolio</h1>
-          <p>Hi My Name is Felipe Villa and below are</p>
-          <h2>Examples of my work</h2>
+          <div className="home__showbox_titles">
+            <h1 className="home__showbox_titles__1">Portfolio</h1>
+            <p className="home__showbox_titles__2">Check Out</p>
+            <h2 className="home__showbox_titles__3">Examples of my work</h2>
+          </div>
+
           <div className="examples">
-            <a href="https://scratch.mit.edu/projects/626326222">
+            <a
+              href="https://scratch.mit.edu/projects/626326222"
+              target="_blank"
+              rel="noreferrer"
+            >
               Scratch Based Game
             </a>
-            <a href="https://codesandbox.io/s/spacemanparallax-qut1r?file=/src/styles.css">
-              Custom made parallax effects
+            <a
+              href="https://codesandbox.io/s/spacemanparallax-qut1r?file=/src/styles.css"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Custom made parallax effect
             </a>
-            <a href="https://pacific-retreat-51764.herokuapp.com/">
-              RPG style message board
+            <a
+              href="https://pacific-retreat-51764.herokuapp.com/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              RPG style message board(test with false info)
             </a>
           </div>
         </div>
