@@ -6,7 +6,7 @@ function App() {
   const [home, setHome] = useState(false);
 
   const toggleClass = () => {
-    if (hide == false) {
+    if (hide === false) {
       setHide(!hide);
     } else {
       setHide(hide);
@@ -39,7 +39,7 @@ function App() {
         <div className="home__showbox__text">
           <div className="home__showbox_titles">
             <h1 className="home__showbox_titles__1">Portfolio</h1>
-            <p className="home__showbox_titles__2">Check Out</p>
+
             <h2 className="home__showbox_titles__3">Examples of my work</h2>
           </div>
 
