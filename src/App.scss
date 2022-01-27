@@ -14,10 +14,13 @@
 }
 
 .home {
+  background-image: url(./images/ocean_wave.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #8efead;
   height: 100vw;
   width: 100vw;
   max-height: 969px;
@@ -45,14 +48,13 @@
     display: none;
   }
   &__showbox {
-    // background-image: url(./images/forest.jpg);
-    // background-repeat: no-repeat;
-    // background-position: center;
-    // background-size: cover;
-    // border: 5px solid #ffec99d5;
-    // border-radius: 20px;
-    width: 700px;
-    height: 800px;
+    background-image: url(./images/rocks_mountain.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vw;
+    width: 100vw;
+    max-height: 969px;
   }
 }
 
@@ -117,10 +119,10 @@ header {
   flex-direction: row;
   padding-left: 1rem;
   padding-right: 1rem;
-  background-image: url(./images/forest.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+  // background-image: url(./images/forest.jpg);
+  // background-repeat: no-repeat;
+  // background-position: center;
+  // background-size: cover;
   border: 5px solid #ffec99d5;
   border-radius: 20px;
 }
