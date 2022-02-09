@@ -24,6 +24,7 @@ function App() {
         className={hide ? "home__showbox" : "home__box"}
       >
         <About />
+        test
       </div>
     </div>
   );
