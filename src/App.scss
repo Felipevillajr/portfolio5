@@ -48,12 +48,13 @@
     display: none;
   }
   &__showbox {
-    background-image: url(./images/rocks_mountain.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    height: 100vw;
-    width: 100vw;
+    // background-image: url(./images/rocks_mountain.jpg);
+    // background-repeat: no-repeat;
+    // background-position: center;
+    // background-size: cover;
+    background-color: white;
+    height: 25vw;
+    width: 80vw;
     max-height: 969px;
   }
 }
@@ -88,11 +89,12 @@
   justify-content: center;
   align-items: center;
   margin-top: 2rem;
+  border: 2px solid red;
 }
 
 a {
   text-decoration: none;
-  color: yellow;
+  color: blue;
   // font-weight: bold;
   text-shadow: 10px 10px 10px 10px rgb(0, 0, 0);
 }
@@ -102,14 +104,14 @@ a:hover {
   text-decoration: underline;
 }
 
-.home__showbox__text {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  color: #38f76e;
-  cursor: default;
-}
+// .home__showbox__text {
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   flex-direction: column;
+//   color: #38f76e;
+//   cursor: default;
+// }
 
 header {
   color: #38f76e;
