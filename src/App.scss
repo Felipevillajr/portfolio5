@@ -12,6 +12,17 @@
 @mixin fadein {
   @include animate(fadein, 5s, finite, normal);
 }
+@mixin fadein2 {
+  @include animate(fadein, 8s, finite, normal);
+}
+
+.modulefade {
+  @include fadein2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
 
 .home {
   background-image: url(./images/ocean_wave.jpg);
@@ -104,14 +115,15 @@ a:hover {
   text-decoration: underline;
 }
 
-// .home__showbox__text {
-//   display: flex;
-//   justify-content: center;
-//   align-items: center;
-//   flex-direction: column;
-//   color: #38f76e;
-//   cursor: default;
-// }
+.home__showbox__text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: Black;
+  cursor: default;
+  width: 50%;
+}
 
 header {
   color: #38f76e;
@@ -127,4 +139,12 @@ header {
   // background-size: cover;
   border: 5px solid #ffec99d5;
   border-radius: 20px;
+}
+
+#connect {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }

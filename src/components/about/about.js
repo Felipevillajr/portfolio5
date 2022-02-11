@@ -5,7 +5,7 @@ import Connect from "../howtoconnect/connect.js";
 
 export default function about() {
   return (
-    <div>
+    <div className="modulefade">
       <Portfolio />
       <Connect />
     </div>
